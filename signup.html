@@ -9,14 +9,12 @@
         *{
             margin: 0;
             padding: 0;
-            
         }
         body{
             display: flex;
             justify-content: center;
         }
         #content{
-            
             width: 20rem;
             margin-top: 5rem;
             padding: 3rem 2rem;
@@ -29,20 +27,26 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
-           
         }
         form>*{
             width: 100%;
             border: none;
-            ;
-            
         }
         button{
             background-color: #00b08c;
             color: #d3f1ea;
             height: 3rem;
             margin-bottom: 10px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #1cb899;
+            scale: 1.0125;
+            transition: 200ms scale ease-in-out
+            /* transition-delay: 1000ms; */
+        }
+        button:focus{
+            background-color: #56ffe0;
         }
         h2{
             text-align: center;
@@ -64,7 +68,7 @@
             <input type="text" placeholder="Full Name" value="">
             <input type="text" placeholder="Email" value="">
             <input type="text" placeholder="Organization" value="">
-            <button onclick="goHome()">SUBMIT</button>
+            <button onclick="goLogin()">SUBMIT</button>
             <button onclick="goHome()">RETURN</button>
             
 
@@ -76,6 +80,10 @@
 function goHome(){
     event.preventDefault();
     location.href = "./navbar.html";
+}
+function goLogin(){
+    event.preventDefault();
+    location.href = "./login.html";
 }
 
 </script>
