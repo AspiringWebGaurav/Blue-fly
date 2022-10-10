@@ -61,14 +61,21 @@
     <div id="content">
         <form action="">
             <h2> SIGN UP FORM</h2>
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Organization">
-            <button>SUBMIT</button>
-            <button>RETURN</button>
+            <input type="text" placeholder="Full Name" value="">
+            <input type="text" placeholder="Email" value="">
+            <input type="text" placeholder="Organization" value="">
+            <button onclick="goHome()">SUBMIT</button>
+            <button onclick="goHome()">RETURN</button>
             
 
         </form>
     </div>
 </body>
 </html>
+<script>
+function goHome(){
+    event.preventDefault();
+    location.href = "./navbar.html";
+}
+
+</script>
